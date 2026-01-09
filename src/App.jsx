@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import Navbar from "./components/Navbar";
@@ -11,12 +11,13 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
-    setCart([...cart, product]);
+    setCart((prevCart) => [...prevCart, product]);
   };
 
   return (
-    <BrowserRouter>
-      <Navbar />
+    <Router>
+      <Navbar/>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -27,7 +28,7 @@ function App() {
       </Routes>
 
       <FloatingWhatsApp />
-    </BrowserRouter>
+    </Router>
   );
 }
 

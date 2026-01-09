@@ -6,19 +6,37 @@ export default function FloatingWhatsApp() {
     <a
       href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
       target="_blank"
-      style={{
-        position: "fixed",
-        bottom: 20,
-        right: 20,
-        background: "#25D366",
-        color: "white",
-        padding: "12px 16px",
-        borderRadius: "50px",
-        fontSize: 18,
-        zIndex: 1000
-      }}
+      rel="noreferrer"
+      style={styles.button}
+      aria-label="Chat on WhatsApp"
     >
-      💬 WhatsApp
+      <span style={styles.icon}>💬</span>
     </a>
   );
 }
+
+/* ===== STYLES ===== */
+const styles = {
+  button: {
+    position: "fixed",
+    bottom: "22px",
+    right: "22px",
+    width: "60px",
+    height: "60px",
+    background: "#25D366",
+    color: "#fff",
+    borderRadius: "50%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: "26px",
+    boxShadow: "0 6px 14px rgba(0,0,0,0.25)",
+    textDecoration: "none",
+    zIndex: 1000,
+    transition: "transform 0.3s ease"
+  },
+
+  icon: {
+    lineHeight: 1
+  }
+};

@@ -6,7 +6,7 @@ export default function Navbar({ cartCount = 0 }) {
       <div style={styles.container}>
         {/* LOGO */}
         <Link to="/" style={styles.logo}>
-          🌰 CashewMart
+          🌰 PMCashewMart
         </Link>
 
         {/* NAV LINKS */}

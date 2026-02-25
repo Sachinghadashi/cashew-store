@@ -29,7 +29,6 @@ export default function Home() {
         <div style={styles.features}>
           <div style={styles.card}>🌱 100% Natural</div>
           <div style={styles.card}>🏭 Hygienic Processing</div>
-          <div style={styles.card}>🚚 Fast Delivery</div>
           <div style={styles.card}>💯 Premium Quality</div>
         </div>
       </section>
@@ -37,7 +36,7 @@ export default function Home() {
       {/* ===== FOOTER ===== */}
       <footer style={styles.footer}>
         <p>© {new Date().getFullYear()} CashewMart</p>
-        <p>📞 Contact: +91 98765 43210</p>
+        <p>📞 Contact: +91  9552879074</p>
         <p>📍 Maharashtra, India</p>
       </footer>
     </>
